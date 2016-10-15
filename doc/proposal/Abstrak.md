@@ -1,0 +1,6 @@
+**ABSTRAK**
+
+Aplikasi Pengelolaan dan Transaksi Barang PT.Sinar Anugerah berbasis Framework CI Sub Modul Penjualan ini merupakan aplikasi Pengelolaan dan transaksi Barang berbasis Web. Karena pendataan pada PT.Sinar Anugerah tersebut masih secara manual sehingga pada laporan pendataan tersebut tidak teratur dan tidak akurat, salah satu contoh yaitu pada rekapitulasi hasil pendapatan yang belum dikelola secara komputerisasi. Maka dari itu kami merancang aplikasi ini yang dibangun dengan menggunakan bahasa pemrograman HTML, CSS, Java Script, dan PHP serta menggunakan MySQL sebagai Database Management System (DBMS). Dengan menggunakan computer atau laptop, alat pengembangan aplikasi database menggunakan MySQL, dan dengan bahasa pemograman yang telah disebutkan tadi. Aplikasi Perancngan Sistem Informasi open source pengelolaan Barang ini akan menyimpan dan mengelola semua data barang. Adapun layanan yang terdapat dalam aplikasi ini pengelola dan yang bersangkutan  dapat melihat data data barang yang di distribusikan  secara akurat.
+
+**Kata Kunci : aplikasi pengelolaan dan transaksi barang , CSS, HTML, Java
+                   Script,  MySQL, PHP ****.**
