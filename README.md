@@ -4,7 +4,7 @@ This is example repository for educational purpose
 * Windows Operating System
 * XAMPP v3.2.1
 * Sublime Text v3
-* Code Igniter Framework
+* CodeIgniter Framework
 * Google Chrome
 
 ## Installation
