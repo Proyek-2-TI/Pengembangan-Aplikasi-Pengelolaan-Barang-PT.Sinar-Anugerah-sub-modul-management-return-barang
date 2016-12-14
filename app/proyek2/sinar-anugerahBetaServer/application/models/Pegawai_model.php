@@ -23,21 +23,23 @@ class Pegawai_model extends CI_Model{
         }else{
             $ID = "001";
         }
-        return "ps".$ID;
+        return "pg".$ID;
     }
 
     public function insertPegawai()
     {
         $id_pegawai    = $this->input->post('id_pegawai');
-        $nm_pegawai    = $this->input->post('nm_pegawai');
-        $almt_pegawai  = $this->input->post('almt_pegawai');
-        $email_pegawai = $this->input->post('email_pegawai');
+        $username    = $this->input->post('username');
+        $password  = $this->input->post('password');
+        $nm_pegawai = $this->input->post('nm_pegawai');
+        $id_lvl_akses = $this->input->post('id_lvl_akses');
 
         $data=array(
             'ID_PEGAWAI'=> $this->input->post('id_pegawai'),
+            'USERNAME'=>$this->input->post('username'),
+            'PASSWORD'=>$this->input->post('password'),
             'NM_PEGAWAI'=>$this->input->post('nm_pegawai'),
-            'ALMT_PEGAWAI'=>$this->input->post('almt_pegawai'),
-            'EMAIL_PEGAWAI'=>$this->input->post('email_pegawai'),
+            'ID_LVL_AKSES'=>$this->input->post('id_lvl_akses'),
         );
 
         $this->db->insert('TBL_PEGAWAI',$data);

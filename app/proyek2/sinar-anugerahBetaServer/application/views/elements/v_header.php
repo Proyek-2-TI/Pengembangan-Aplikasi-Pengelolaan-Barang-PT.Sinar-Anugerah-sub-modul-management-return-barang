@@ -86,7 +86,7 @@
                         <i class="icon-film"></i> Barang 
                     </a>
                 </li>
-                <li>
+                <li class="panel <?php echo $pegawai ?>"> 
                     <a href="<?php echo site_url('Pegawai_Controller')?>">
                         <i class="icon-table"></i> Pegawai 
                     </a>
@@ -185,7 +185,7 @@
                         <i class="icon-film"></i> Barang 
                     </a>
                 </li>
-                <li>
+                <li li class="panel <?php echo $pegawai ?>">
                     <a href="<?php echo site_url('Pegawai_Controller')?>">
                         <i class="icon-table"></i> Pegawai 
                     </a>

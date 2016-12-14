@@ -1,5 +1,5 @@
 <?php
-class pegawai_Controller extends CI_Controller{
+class Pegawai_Controller extends CI_Controller{
     function __construct(){
         parent::__construct();
         if($this->session->userdata('login_status') != TRUE ){
@@ -61,7 +61,7 @@ class pegawai_Controller extends CI_Controller{
             'headerPage'=>'Data Pegawai',
             'headerPanel'=>'Edit Data Pegawai',
 
-            'data_pegawai'=>$this->Pegawai_model->getKodePegawai($id),
+            'data_pegawai'=>$this->Pegawai_model->getIdPegawai($id),
         );
         $this->load->view('elements/v_header',$data);
         $this->load->view('pages/pegawai/v_edit_pegawai');
@@ -72,8 +72,10 @@ class pegawai_Controller extends CI_Controller{
         $id['ID_PEGAWAI'] = $this->input->post('id_pegawai');
         $data=array(
             'NM_PEGAWAI'=>$this->input->post('nm_pegawai'),
-            'ALMT_PEGAWAI'=>$this->input->post('almt_pegawai'),
-            'EMAIL_PEGAWAI'=>$this->input->post('email_pegawai'),
+            'USERNAME'=>$this->input->post('username'),
+            'PASSWORD'=>$this->input->post('password'),
+            'NM_PEGAWAI'=>$this->input->post('nm_pegawai'),
+            'ID_LVL_AKSES'=>$this->input->post('id_lvl_akses'),
         );
         $this->Global_model->updateData('TBL_PEGAWAI',$data,$id);
         redirect("Pegawai_controller");
